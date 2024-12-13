@@ -1,41 +1,131 @@
+<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sitio en Construcción</title>
+    <title>Literal B - Servicios Jurídicos</title>
     <style>
         body {
             margin: 0;
             padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background-color: #102a28; /* Color verde oscuro */
-            color: #ffffff; /* Texto blanco */
             font-family: Arial, sans-serif;
+            background-color: #102a28; /* Fondo verde oscuro */
+            color: #ffffff; /* Texto blanco */
             text-align: center;
         }
-        h1 {
-            font-size: 2.5em;
-            margin-bottom: 10px;
+        header {
+            padding: 20px;
+            background-color: #0d2422;
         }
-        p {
+        header h1 {
+            font-size: 2.5em;
+            margin: 0;
+        }
+        header p {
             font-size: 1.2em;
         }
-        .line {
-            width: 50px;
-            height: 3px;
-            background-color: #c4a24a; /* Color dorado */
-            margin: 10px auto;
+        section {
+            padding: 20px;
+        }
+        .services h2 {
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+        .services ul {
+            list-style: none;
+            padding: 0;
+        }
+        .services ul li {
+            margin: 10px 0;
+            font-size: 1.2em;
+        }
+        .vision-mission {
+            background-color: #0f2d2a;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+        }
+        .vision-mission h2 {
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+        button {
+            background-color: #c4a24a; /* Botón dorado */
+            color: #102a28;
+            border: none;
+            padding: 15px 30px;
+            font-size: 1.2em;
+            margin-top: 20px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #b8903d;
         }
     </style>
 </head>
 <body>
-    <div>
-        <h1>Sitio en Construcción</h1>
-        <div class="line"></div>
-        <p>Estamos trabajando para ofrecerle un mejor servicio.</p>
-    </div>
+    <header>
+        <h1>Bienvenido a Literal B</h1>
+        <p>Servicios jurídicos y profesionales integrales a su alcance.</p>
+    </header>
+    <section>
+        <h2>Nuestros Servicios</h2>
+        <div class="services">
+            <h3>Derecho Civil</h3>
+            <ul>
+                <li>Contratos</li>
+                <li>Propiedades y Bienes Raíces</li>
+                <li>Herencias y Sucesiones</li>
+                <li>Responsabilidad Civil e Indemnización de Perjuicios</li>
+            </ul>
+            <h3>Derecho Laboral</h3>
+            <ul>
+                <li>Defensa de Trabajadores</li>
+                <li>Asesoría a Sindicatos</li>
+                <li>Asesoría a Asociaciones de Funcionarios</li>
+            </ul>
+            <h3>Derecho Administrativo</h3>
+            <ul>
+                <li>Defensa de Funcionarios Públicos</li>
+                <li>Asesoría en Sumarios Administrativos e Investigación Sumaria</li>
+                <li>Gestiones ante Contraloría y otras entidades administrativas o municipales</li>
+            </ul>
+            <h3>Derecho Penal</h3>
+            <ul>
+                <li>Defensa Penal</li>
+                <li>Delitos de Injurias y Calumnias</li>
+                <li>Querellas y Denuncias</li>
+            </ul>
+            <h3>Derecho Constitucional</h3>
+            <ul>
+                <li>Recursos de Protección y Amparo</li>
+                <li>Asesoría en Derechos Fundamentales</li>
+            </ul>
+            <h3>Derecho de Familia</h3>
+            <ul>
+                <li>Divorcios y Separaciones</li>
+                <li>Cuidado Personal y Régimen de Relación Directa y Regular</li>
+                <li>Alimentos</li>
+            </ul>
+            <h3>Derecho de Agua y Servicios Sanitarios Rurales</h3>
+            <ul>
+                <li>Derechos de Aprovechamiento de Agua</li>
+                <li>Asesoría a Comités y Cooperativas de Agua Potable Rural</li>
+            </ul>
+            <h3>Derecho Comercial</h3>
+            <ul>
+                <li>Constitución de Empresas en un Día</li>
+                <li>Modificaciones y Actualización de Estatutos</li>
+                <li>Contratos Comerciales</li>
+            </ul>
+        </div>
+        <div class="vision-mission">
+            <h2>Nuestra Visión y Misión</h2>
+            <p><strong>Visión:</strong> Ser líderes en servicios jurídicos integrales, proporcionando soluciones eficientes y personalizadas para nuestros clientes.</p>
+            <p><strong>Misión:</strong> Brindar asesoría legal de alta calidad, garantizando el acceso a la justicia y la defensa de los derechos de nuestros representados.</p>
+        </div>
+        <button onclick="location.href='mailto:contacto@literalb.cl'">Cotiza y Contáctanos</button>
+    </section>
 </body>
 </html>
