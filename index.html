@@ -7,62 +7,91 @@
     <style>
         body {
             margin: 0;
-            padding: 0;
-            font-family: "Georgia", serif; /* Fuente más formal */
-            background-color: #102a28; /* Fondo verde oscuro */
-            color: #dcdcdc; /* Texto gris claro, menos brillante que blanco */
-            text-align: left;
+            font-family: "Georgia", serif;
+            background-color: #f4f4f4;
+            color: #333;
             line-height: 1.6;
         }
         header {
-            padding: 20px;
-            background-color: #0d2422;
+            background-color: #102a28; /* Fondo verde oscuro */
+            color: #ffffff;
+            padding: 20px 40px;
+            text-align: center;
         }
         header img {
-            display: block;
-            margin: 0 auto;
-            max-width: 200px;
+            max-width: 150px;
+            margin-bottom: 10px;
         }
         header h1 {
+            margin: 0;
             font-size: 2.5em;
-            text-align: center;
-            margin: 10px 0;
-            color: #c4a24a; /* Color dorado */
         }
         header p {
-            font-size: 1.2em;
-            text-align: center;
-        }
-        section {
-            padding: 20px;
-        }
-        h2 {
-            font-size: 2em;
-            margin-bottom: 10px;
-            color: #c4a24a; /* Color dorado */
-        }
-        h3 {
-            font-size: 1.5em;
-            margin-bottom: 5px;
-            color: #c4a24a; /* Color dorado */
-        }
-        .services ul {
-            list-style: none;
-            padding: 0;
-        }
-        .services ul li {
             margin: 10px 0;
+            font-size: 1.2em;
+        }
+        nav {
+            text-align: center;
+            margin-top: 20px;
+        }
+        nav a {
+            color: #c4a24a;
+            text-decoration: none;
+            margin: 0 15px;
             font-size: 1.1em;
         }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            padding: 40px 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+        h2 {
+            color: #102a28;
+            margin-bottom: 20px;
+            font-size: 2em;
+            border-bottom: 2px solid #c4a24a;
+            display: inline-block;
+        }
+        .services {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: space-between;
+        }
+        .service {
+            flex: 1 1 calc(33.333% - 20px);
+            background: #ffffff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .service h3 {
+            margin-top: 0;
+            color: #102a28;
+        }
+        .service p {
+            font-size: 0.9em;
+            color: #666;
+        }
+        footer {
+            background-color: #102a28;
+            color: #ffffff;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
         button {
-            background-color: #c4a24a; /* Botón dorado */
+            background-color: #c4a24a;
             color: #102a28;
             border: none;
-            padding: 15px 30px;
-            font-size: 1.2em;
-            margin-top: 20px;
-            cursor: pointer;
+            padding: 10px 20px;
+            font-size: 1em;
             border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
         }
         button:hover {
             background-color: #b8903d;
@@ -72,54 +101,53 @@
 <body>
     <header>
         <img src="https://raw.githubusercontent.com/marmotei/literalb/main/LITERAL%20B_ISOLOGOTIPO%20-%20VERT.png" alt="Literal B Isologotipo">
-        <h1>Bienvenido a Literal B</h1>
-        <p>Servicios jurídicos y profesionales integrales a su alcance.</p>
+        <h1>Literal B</h1>
+        <p>Servicios Jurídicos y Profesionales Integrales</p>
+        <nav>
+            <a href="#servicios">Servicios</a>
+            <a href="#contacto">Contáctanos</a>
+        </nav>
     </header>
-    <section>
-        <h2>Nuestros Servicios</h2>
+
+    <div class="container">
+        <h2 id="servicios">Nuestros Servicios</h2>
         <div class="services">
-            <h3>Derecho Civil</h3>
-            <ul>
-                <li><strong>Contratos:</strong> Asesoría en la elaboración, revisión y ejecución de contratos civiles y comerciales, asegurando su validez y cumplimiento.</li>
-                <li><strong>Propiedades y Bienes Raíces:</strong> Asistencia en procesos de compra, venta y transacción de bienes raíces, así como en disputas relacionadas con la propiedad y el registro de los mismos.</li>
-                <li><strong>Herencias y Sucesiones:</strong> Asesoramiento en la planificación y distribución del patrimonio, incluyendo la tramitación de posesiones efectivas y juicios de partición.</li>
-                <li><strong>Responsabilidad Civil e Indemnización de Perjuicios:</strong> Representación en casos de daños y perjuicios, buscando la reparación e indemnización correspondiente.</li>
-            </ul>
-            <h3>Derecho Laboral</h3>
-            <ul>
-                <li><strong>Defensa de Trabajadores:</strong> Representación en casos de despido injustificado, autodespido, discriminación y vulneración de derechos fundamentales.</li>
-                <li><strong>Asesoría a Sindicatos:</strong> Apoyo en negociaciones colectivas, formación de sindicatos y defensa de derechos colectivos.</li>
-                <li><strong>Asesoría a Asociaciones de Funcionarios:</strong> Orientación jurídica en procesos internos, negociación con empleadores y defensa de derechos laborales en el sector público y privado.</li>
-            </ul>
-            <h3>Derecho Administrativo</h3>
-            <ul>
-                <li><strong>Defensa de Funcionarios Públicos:</strong> Asesoría en sumarios administrativos, recursos jerárquicos y protección de derechos laborales en el sector público.</li>
-                <li><strong>Asesoría en Sumarios Administrativos e Investigación Sumaria:</strong> Orientación y representación en procedimientos disciplinarios internos, garantizando el debido proceso y la protección de derechos.</li>
-                <li><strong>Gestiones ante Contraloría y otras entidades administrativas o municipales:</strong> Representación y asesoramiento en trámites administrativos, emisión de informes y presentación de recursos relacionados con actos u omisiones de la administración.</li>
-            </ul>
-            <h3>Derecho Penal</h3>
-            <ul>
-                <li><strong>Defensa Penal:</strong> Representación en procesos penales, garantizando el debido proceso y la protección de los derechos fundamentales.</li>
-                <li><strong>Delitos de Injurias y Calumnias:</strong> Especialidad en defensa y representación en casos de delitos contra el honor, tanto en defensa como en la interposición de querellas.</li>
-                <li><strong>Querellas y Denuncias:</strong> Presentación de querellas y denuncias en representación de víctimas de delitos, buscando justicia y reparación.</li>
-            </ul>
-            <h3>Derecho Constitucional</h3>
-            <ul>
-                <li><strong>Recursos de Protección y Amparo:</strong> Interposición de recursos para proteger derechos fundamentales vulnerados por actos u omisiones de autoridades o particulares.</li>
-                <li><strong>Asesoría en Derechos Fundamentales:</strong> Orientación jurídica sobre derechos constitucionales y mecanismos para su defensa y promoción.</li>
-            </ul>
-            <h3>Derecho de Familia</h3>
-            <ul>
-                <li><strong>Divorcios y Separaciones:</strong> Asesoramiento en la tramitación de divorcios, separaciones y acuerdos de convivencia.</li>
-                <li><strong>Cuidado Personal y Régimen de Relación Directa y Regular:</strong> Representación en procesos de cuidado de hijos, visitas y acuerdos familiares.</li>
-                <li><strong>Alimentos:</strong> Asesoría y representación en demandas de pensión alimenticia y en procesos de modificación de montos.</li>
-            </ul>
-            <h3>Derecho de Agua y Servicios Sanitarios Rurales</h3>
-            <ul>
-                <li><strong>Derechos de Aprovechamiento de Agua:</strong> Gestión de regularización y tramitación de derechos de agua ante autoridades competentes.</li>
-                <li><strong>Asesoría a Comités y Cooperativas de Agua Potable Rural:</strong> Orientación jurídica y técnica para la administración, operación y cumplimiento normativo de servicios sanitarios rurales.</li>
-            </ul>
-            <h3>Derecho Comercial</h3>
-            <ul>
-                <li><strong>Constitución de Empresas en un Día:</strong> Asesoría integral en la creación de empresas, incluyendo trámites en línea y formalización ante el Servicio de Impuestos Internos (SII).</li>
-                <
+            <div class="service">
+                <h3>Derecho Civil</h3>
+                <p>Asesoría y representación en contratos, bienes raíces, herencias y responsabilidad civil.</p>
+                <button>Más información</button>
+            </div>
+            <div class="service">
+                <h3>Derecho Penal</h3>
+                <p>Defensa en procesos penales, delitos de injurias y calumnias, y presentación de querellas.</p>
+                <button>Más información</button>
+            </div>
+            <div class="service">
+                <h3>Derecho de Familia</h3>
+                <p>Gestión de divorcios, pensiones alimenticias y acuerdos de cuidado personal.</p>
+                <button>Más información</button>
+            </div>
+            <div class="service">
+                <h3>Derecho Administrativo</h3>
+                <p>Defensa de funcionarios, sumarios administrativos y gestiones ante Contraloría.</p>
+                <button>Más información</button>
+            </div>
+            <div class="service">
+                <h3>Derecho Constitucional</h3>
+                <p>Protección de derechos fundamentales y recursos de amparo.</p>
+                <button>Más información</button>
+            </div>
+            <div class="service">
+                <h3>Derecho Comercial</h3>
+                <p>Constitución de empresas, contratos comerciales y modificaciones de estatutos.</p>
+                <button>Más información</button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2024 Literal B - Todos los derechos reservados</p>
+        <a id="contacto" href="mailto:contacto@literalb.cl"><button>Contáctanos</button></a>
+    </footer>
+</body>
+</html>
